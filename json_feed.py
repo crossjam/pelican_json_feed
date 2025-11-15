@@ -58,7 +58,6 @@ class JSONFeed(object):
         self.feed["items"].append(item)
 
     def write(self, fp, encoding="utf-8"):
-        # json.dump(self.feed, fp, encoding)
         json.dump(self.feed, fp)
 
 
